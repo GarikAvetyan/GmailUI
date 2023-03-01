@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.meet.fragment.MeetFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_8dp"
+        android:background="@drawable/shape_dark_gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/menuNavigationView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_8dp"
+            android:background="@drawable/pressed_image_view"
+            android:src="@drawable/icon_menu"
+            app:layout_constraintBottom_toBottomOf="@+id/meetTextView"
+            app:layout_constraintEnd_toStartOf="@id/meetTextView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/meetTextView" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/meetTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/meet"
+            android:textSize="@dimen/_20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/userImageView"
+            app:layout_constraintStart_toEndOf="@+id/menuNavigationView"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/userImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_8dp"
+            android:src="@drawable/user_image"
+            app:layout_constraintBottom_toBottomOf="@+id/meetTextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/meetTextView"
+            app:layout_constraintTop_toTopOf="@+id/meetTextView" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/newMeetingButton"
+        style="@style/MainButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_8dp"
+        android:text="@string/new_meeting"
+        app:layout_constraintEnd_toStartOf="@id/joinWithCodeButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/joinWithCodeButton"
+        android:layout_width="0dp"
+        style="@style/MainButton"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_8dp"
+        android:text="@string/join_with_a_code"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/newMeetingButton"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/meetImageView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/meet_image"
+        android:layout_margin="@dimen/_32dp"
+        app:layout_constraintBottom_toTopOf="@id/getLinkShareTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/newMeetingButton" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/getLinkShareTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginVertical="@dimen/_4dp"
+        android:text="@string/get_a_link_you_can_share"
+        android:textSize="@dimen/_20sp"
+        app:layout_constraintBottom_toTopOf="@id/notificationTextView"
+        app:layout_constraintEnd_toEndOf="@+id/meetImageView"
+        app:layout_constraintStart_toStartOf="@+id/meetImageView"
+        app:layout_constraintTop_toBottomOf="@+id/meetImageView" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/notificationTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_4dp"
+        android:layout_marginBottom="@dimen/_128dp"
+        android:gravity="center"
+        android:text="@string/notification_text"
+        android:textSize="@dimen/_16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/meetImageView"
+        app:layout_constraintStart_toStartOf="@+id/meetImageView"
+        app:layout_constraintTop_toBottomOf="@+id/getLinkShareTextView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/primaryRowConstraintLayout"
+    android:layout_marginVertical="@dimen/_4dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/userImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_16dp"
+        android:src="@drawable/icon_user_blue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/usernameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_8dp"
+        android:layout_marginTop="@dimen/_4dp"
+        android:maxLength="20"
+        android:text="@string/username"
+        android:textSize="@dimen/_20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/titleTextView"
+        app:layout_constraintStart_toEndOf="@+id/userImageView"
+        app:layout_constraintTop_toTopOf="@+id/userImageView" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLength="20"
+        android:text="@string/title"
+        android:textSize="@dimen/_16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/generalTextView"
+        app:layout_constraintStart_toStartOf="@+id/usernameTextView"
+        app:layout_constraintTop_toBottomOf="@+id/usernameTextView" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/generalTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_4dp"
+        android:maxLength="20"
+        android:text="@string/general"
+        android:textSize="@dimen/_16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/userImageView"
+        app:layout_constraintStart_toStartOf="@+id/usernameTextView"
+        app:layout_constraintTop_toBottomOf="@+id/titleTextView" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/messageStarImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_star_24"
+        app:layout_constraintBottom_toBottomOf="@+id/generalTextView"
+        app:layout_constraintEnd_toEndOf="@+id/timeTextView"
+        app:layout_constraintTop_toBottomOf="@+id/timeTextView" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/timeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_starred"
+        android:text="@string/time"
+        android:layout_marginEnd="@dimen/_16dp"
+        app:layout_constraintBottom_toTopOf="@+id/messageStarImageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/usernameTextView" />
+</androidx.constraintlayout.widget.ConstraintLayout>

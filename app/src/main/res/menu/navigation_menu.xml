@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_primary"
+        android:icon="@drawable/icon_primary"
+        android:title="@string/primary" />
+
+    <item
+        android:id="@+id/navigation_promotions"
+        android:icon="@drawable/icon_promotions"
+        android:title="@string/promotions" />
+
+    <item
+        android:id="@+id/navigation_social"
+        android:icon="@drawable/icon_social"
+        android:title="@string/social" />
+
+    <item android:title="@string/all_labels">
+        <menu>
+            <item
+                android:id="@+id/navigation_starred"
+                android:icon="@drawable/icon_starred"
+                android:title="@string/starred" />
+
+            <item
+                android:id="@+id/navigation_snoozed"
+                android:icon="@drawable/icon_snoozed"
+                android:title="@string/snoozed" />
+            <item
+                android:id="@+id/navigation_important"
+                android:icon="@drawable/icon_important"
+                android:title="@string/important" />
+            <item
+                android:id="@+id/navigation_sent"
+                android:icon="@drawable/icon_sent"
+                android:title="@string/sent" />
+            <item
+                android:id="@+id/navigation_scheduled"
+                android:icon="@drawable/icon_scheduled"
+                android:title="@string/scheduled" />
+            <item
+                android:id="@+id/navigation_outbox"
+                android:icon="@drawable/icon_outbox"
+                android:title="@string/outbox" />
+            <item
+                android:id="@+id/navigation_drafts"
+                android:icon="@drawable/icon_drafts"
+                android:title="@string/drafts" />
+            <item
+                android:id="@+id/navigation_all_mail"
+                android:icon="@drawable/icon_all_mail"
+                android:title="@string/all_mail" />
+            <item
+                android:id="@+id/navigation_spam"
+                android:icon="@drawable/icon_spam"
+                android:title="@string/spam" />
+            <item
+                android:id="@+id/navigation_trash"
+                android:icon="@drawable/icon_trash"
+                android:title="@string/trash" />
+        </menu>
+
+    </item>
+
+    <item android:title="@string/google_apps">
+        <menu>
+            <item
+                android:id="@+id/navigation_calendar"
+                android:icon="@drawable/icon_calendar"
+                android:title="@string/calendar" />
+            <item
+                android:id="@+id/navigation_contacts"
+                android:icon="@drawable/icon_contacts"
+                android:title="@string/contacts" />
+        </menu>
+
+    </item>
+
+    <item android:title="@string/others">
+        <menu>
+            <item
+                android:id="@+id/navigation_settings"
+                android:icon="@drawable/icon_settings"
+                android:title="@string/settings" />
+            <item
+                android:id="@+id/navigation_help_feedback"
+                android:icon="@drawable/icon_help_feedback"
+                android:title="@string/help_and_feedback" />
+        </menu>
+
+    </item>
+</menu>
